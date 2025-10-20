@@ -1,0 +1,96 @@
+/* Asegurar que el video ocupa toda la pantalla */
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1; /* Envía el video al fondo */
+}
+
+/* Contenedor principal para centrar todo */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Estilo del título */
+#titulo {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Contenedor de opciones para que los botones estén alineados */
+#options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Estilos para los botones */
+button {
+    width: 80%;
+    max-width: 350px;
+    padding: 12px;
+    font-size: 18px;
+    background: rgba(0, 0, 255, 0.7);
+    color: white;
+    border: none;
+    margin: 10px 0;
+    cursor: pointer;
+    text-align: center;
+}
+#playMusic {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 12px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    cursor: pointer;
+    z-index: 20; /* Asegura que esté sobre los demás elementos */
+}
+
+
+/* 📱 Móviles en vertical */
+@media (max-width: 600px) {
+    #options-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 90%;
+    }
+}
+
+/* 📱 Móviles en horizontal */
+@media (max-width: 900px) and (orientation: landscape) {
+    #options-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    button {
+        width: auto;
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+}
+
