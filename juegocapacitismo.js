@@ -66,7 +66,7 @@ window.addEventListener("resize", ajustarParaMovil);
 let current_scene = 'scene1';
 const scenes = {
     scene1: {
-        video_path: "videos/video1.mp4",
+        video_path: "video1.mp4",
         title: 'Un pasillo largo. Un portón cerrado. El sonido metálico del no. Los cuerpos se golpean contra la arquitectura del privilegio. ¿Quién programó esta inaccesibilidad?',
         buttons: [
             { text: "Escuchar los ecos de quienes no pudieron entrar", pos: [650, 400], action: () => transition_scene('scene2') },
@@ -74,7 +74,7 @@ const scenes = {
         ]
     },
     scene2: {
-        video_path: "videos/video2.mp4",
+        video_path: "video2.mp4",
         title: 'El adultocentrismo: una voz que interrumpe, explica, ordena. Pero al fondo del aula, una mano temblorosa dibuja un nuevo alfabeto. Nadie lo ve todavía.',
         buttons: [
             { text: "Romper el guion del deber ser docente", pos: [650, 400], action: () => transition_scene('scene4') },
@@ -82,7 +82,7 @@ const scenes = {
         ]
     },
     scene3: {
-        video_path: "videos/video3.mp4",
+        video_path: "video3.mp4",
         title: 'Dicen inclusión. Pero la palabra tropieza. Tropieza con los escalones, con los manuales, con los horarios rígidos. Dicen inclusión. Pero no alcanza si nadie se sienta a escuchar.',
         buttons: [
             { text: "Poner subtítulos a la empatía", pos: [650, 400], action: () => transition_scene('scene4') },
@@ -90,7 +90,7 @@ const scenes = {
         ]
     },
     scene4: {
-        video_path: "videos/video4.mp4",
+        video_path: "video4.mp4",
         title: 'Nos dijeron pobrecitxs. Nos dijeron inspiración. Pero somos otra cosa: un enjambre de cuerpos que piensan distinto el movimiento, la pausa, el tiempo.',
         buttons: [
             { text: "Desactivar la lástima como política", pos: [650, 400], action: () => transition_scene('scene5') },
@@ -98,7 +98,7 @@ const scenes = {
         ]
     },
     scene5: {
-        video_path: "videos/video5.mp4",
+        video_path: "video5.mp4",
         title: 'Las paredes oyen. Los pupitres no. Una rampa en la puerta no basta si adentro todo sigue igual. ¿Quién traduce el silencio de lo no adaptado?',
         buttons: [
             { text: "La accesibilidad no es estructura, es vínculo", pos: [650, 400], action: () => transition_scene('scene6') },
@@ -106,7 +106,7 @@ const scenes = {
         ]
     },
     scene6: {
-        video_path: "videos/video6.mp4",
+        video_path: "video6.mp4",
         title: 'El capacitismo es una gramática. Divide, clasifica, borra. Pero hay errores dulces que lo hacen fallar. Un lector de pantalla recita un poema. Un bastón blanco marca el ritmo del aula.',
         buttons: [
             { text: "Dejar que el error sea enseñanza", pos: [650, 400], action: () => transition_scene('scene7') },
@@ -114,7 +114,7 @@ const scenes = {
         ]
     },
     scene7: {
-        video_path: "videos/video7.mp4",
+        video_path: "video7.mp4",
         title: 'Un grupo de estudiantes se rebela contra el tiempo de campana. Crean un horario propio. Leen con la piel, calculan con el cuerpo, se ríen del examen como dispositivo de control.',
         buttons: [
             { text: "Reescribir el derecho a la educación con tinta táctil", pos: [650, 400], action: () => transition_scene('scene8') },
@@ -122,7 +122,7 @@ const scenes = {
         ]
     },
     scene8: {
-        video_path: "videos/video8.mp4",
+        video_path: "video8.mp4",
         title: 'Accesibilidad no como permiso, sino como poética. El derecho a existir también se enseña. También se aprende.',
         buttons: [
             { text: "Aprender a ritmo de respiración", pos: [650, 400], action: () => transition_scene('scene10') },
@@ -130,7 +130,7 @@ const scenes = {
         ]
     },
     scene9: {
-        video_path: "videos/video9.mp4",
+        video_path: "video9.mp4",
         title: 'El sistema educativo: un laberinto. Pero en el suelo, con tiza, alguien dibuja una rampa. El mapa cambia.',
         buttons: [
             { text: "Hackear el aula", pos: [250, 400], action: () => transition_scene('scene12') },
@@ -138,7 +138,7 @@ const scenes = {
         ]
     },
     scene10: {
-        video_path: "videos/video10.mp4",
+        video_path: "video10.mp4",
         title: 'Hay que volver al cuerpo. Al temblor del cuerpo. A la invención de una escuela que respire con nosotrxs, no contra nosotrxs.',
         buttons: [
             { text: "Volver a lo sensible como derecho", pos: [650, 400], action: () => transition_scene('scene14') },
@@ -146,7 +146,7 @@ const scenes = {
         ]
     },
     scene11: {
-        video_path: "videos/video11.mp4",
+        video_path: "video11.mp4",
         title: 'No soy un error de diseño. Soy un cuerpo que inventa su propia interfaz con el mundo. Cada movimiento es una declaración política.',
         buttons: [
             { text: "Celebrar la diferencia como tecnología viva", pos: [650, 400], action: () => transition_scene('scene14') },
@@ -154,7 +154,7 @@ const scenes = {
         ]
     },
     scene12: {
-        video_path: "videos/video12.mp4",
+        video_path: "video12.mp4",
         title: 'Una nave recorre los pasillos del colegio. A bordo: bastones, sillas, tablets lectoras, cuadernos con texturas. La revolución accesible ya está en curso.',
         buttons: [
             { text: "Navegar hacia la educación inclusiva total", pos: [650, 400], action: () => transition_scene('scene1') },
@@ -162,7 +162,7 @@ const scenes = {
         ]
     },
     scene13: {
-        video_path: "videos/video13.mp4",
+        video_path: "video13.mp4",
         title: 'Desconectan la máquina. Pero la red queda encendida: un murmullo de voces dice todavía estamos acá, todavía estamos aprendiendo.',
         buttons: [
             { text: "Seguir aprendiendo desde la interdependencia", pos: [650, 400], action: () => transition_scene('scene14') },
@@ -170,7 +170,7 @@ const scenes = {
         ]
     },
     scene14: {
-        video_path: "videos/video14.mp4",
+        video_path: "video14.mp4",
         title: 'La juventud no pide permiso. Grita sus derechos desde la silla, desde la muleta, desde la lengua de señas. Todo cuerpo es un manifiesto.',
         buttons: [
             { text: "Tomar la palabra con las manos", pos: [650, 400], action: () => transition_scene('scene1') },
@@ -178,7 +178,7 @@ const scenes = {
         ]
     },
     scene15: {
-        video_path: "videos/video15.mp4",
+        video_path: "video15.mp4",
         title: 'Silencio. Escucha. Un latido metálico. Un clic. La accesibilidad es una forma de amor.',
         buttons: [
             { text: "Volver a empezar con todos los sentidos abiertos", pos: [650, 400], action: () => transition_scene('scene1') },
@@ -223,4 +223,5 @@ const scenes = {
     // Iniciar la escena
     transition_scene('scene1'); // Inicializar con la primera escena
 });
+
 
